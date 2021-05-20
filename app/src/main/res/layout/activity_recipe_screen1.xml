@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recipeClassesAndFragments.RecipeScreen">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/content_recipe_screen1" />
+    <include layout="@layout/background_picture" />
+    <include layout="@layout/reusable_layout_toolbar"/>
+    <include layout="@layout/top_toolbar_layout_reusable"/>
+
+
+
+    <!--<androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:translationY="731dp" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="45dp"
+        android:translationY="730dp"
+        app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/cameraPageNotifBadge"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/badge_bgd"
+        android:translationX="85dp"
+        android:translationY="730dp"
+        app:maxTextLength="2"></com.nex3z.notificationbadge.NotificationBadge>
+
+    <ImageButton
+        android:id="@+id/RecipeScreenHomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="175dp"
+        android:translationY="730dp"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/fridgeProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="310dp"
+        android:translationY="730dp"
+        app:srcCompat="@drawable/ic_baseline_account_box_24" />-->
+
+
+    <FrameLayout
+        android:id="@+id/recipe_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

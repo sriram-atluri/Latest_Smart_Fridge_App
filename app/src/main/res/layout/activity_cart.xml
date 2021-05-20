@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activityClasses.CartActivity">
+
+    <include layout="@layout/background_picture" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay" />
+
+
+    <include layout="@layout/content_cart" />
+
+    <include layout="@layout/reusable_layout_toolbar"/>
+    <include layout="@layout/top_toolbar_layout_reusable"/>
+
+    <FrameLayout
+        android:id="@+id/cartContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:layout_above="@+id/btn_placeorder"
+        android:layout_below="@+id/layout_total"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        />-->
+
+    <!-- Creates the increment and decrementer -->
+    <!--<com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:layout_height="45dp"
+        android:layout_width="120dp"
+        android:translationX="30dp"
+        android:translationY="140dp"
+        app:finalNumber="3"
+        app:initialNumber="1"
+        />-->
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

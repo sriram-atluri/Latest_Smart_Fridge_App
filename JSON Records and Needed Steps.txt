@@ -1,0 +1,50 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "iot:Connect",
+      "Resource": "arn:aws:iot:us-west-2:656922978498:client/${iot:ClientId}"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Publish",
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/get"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Subscribe",
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/delta",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/documents",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/rejected",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/get/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/get/rejected"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Receive",
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/delta",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/get/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/get/rejected",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/rejected",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/accepted"
+      ]
+    }
+  ]
+}
+
+Steps where I need assistance:
+
+Attaching policy to the identity id
+Being able to enable MQTT Subscriber Callback
+
+
+Federated Identity ID: us-west-2:cdca400d-7450-4f36-b8ae-8a28f29edabe

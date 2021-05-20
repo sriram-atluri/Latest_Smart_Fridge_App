@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <!--  <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay"/>-->
+
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:translationY="726dp"
+      android:background="#9CC0E7"
+      android:minHeight="?attr/actionBarSize"
+      android:theme="?attr/actionBarTheme" />
+
+
+
+    <ImageButton
+        android:id="@+id/NotifButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:translationX="45dp"
+        android:translationY="728dp"
+        app:srcCompat="@drawable/blue_notifications_icon" />
+
+    <ImageButton
+        android:id="@+id/HomeButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:translationX="175dp"
+        android:translationY="728dp"
+        app:srcCompat="@drawable/blue_home_icon" />
+
+    <ImageButton
+        android:id="@+id/ProfileButton"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:translationX="305dp"
+        android:translationY="728dp"
+        app:srcCompat="@drawable/blue_profile_icon" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cameraClassesAndFragments.CameraScreen2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay"/>
+
+    <include layout="@layout/content_camera_screen2" />
+    <include layout="@layout/reusable_layout_toolbar"/>
+    <include layout="@layout/top_toolbar_layout_reusable"/>
+
+    <ImageButton
+        android:id="@+id/backButtonFromCamera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:translationX="90dp"
+        android:translationY="137dp"
+        app:srcCompat="@drawable/icon_arrow" />
+
+    <ImageButton
+        android:id="@+id/forwardButtonCamera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000"
+        android:rotation="180"
+        android:translationX="270dp"
+        android:translationY="137dp"
+        app:srcCompat="@drawable/icon_arrow" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="150dp"
+        android:translationY="135dp"
+        app:srcCompat="@drawable/fridge_door" />
+
+    <!--<androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:translationY="731dp" />
+
+    <ImageButton
+        android:id="@+id/camera2ToHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="175dp"
+        android:translationY="731dp"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/fridgeNotifButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="45dp"
+        android:translationY="730dp"
+        app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/cameraPageNotifBadge"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/badge_bgd"
+        android:translationX="85dp"
+        android:translationY="730dp"
+        app:maxTextLength="2"></com.nex3z.notificationbadge.NotificationBadge>
+
+    <ImageButton
+        android:id="@+id/fridgeDoorProfileButton"
+        android:layout_width="43dp"
+        android:layout_height="38dp"
+        android:translationX="310dp"
+        android:translationY="734dp"
+        app:srcCompat="@drawable/ic_baseline_account_box_24" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

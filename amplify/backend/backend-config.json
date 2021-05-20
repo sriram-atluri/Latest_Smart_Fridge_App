@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "smartfridgeapp9c9bb290": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

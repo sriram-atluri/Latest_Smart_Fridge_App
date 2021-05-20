@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-smartfridgeapp-dev-144116-authRole",
+      "UnauthRoleArn": "arn:aws:iam::656922978498:role/amplify-smartfridgeapp-dev-144116-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::656922978498:role/amplify-smartfridgeapp-dev-144116-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-smartfridgeapp-dev-144116-deployment",
+      "UnauthRoleName": "amplify-smartfridgeapp-dev-144116-unauthRole",
+      "StackName": "amplify-smartfridgeapp-dev-144116",
+      "StackId": "arn:aws:cloudformation:us-west-2:656922978498:stack/amplify-smartfridgeapp-dev-144116/16a603e0-7a16-11eb-9a0f-0a82346ad109",
+      "AmplifyAppId": "d2k363xvey7k3o"
+    },
+    "categories": {
+      "auth": {
+        "smartfridgeapp9c9bb290": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.login.SignUp">
+
+<!--
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/simplEatLogoSignUpPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:translationY="25dp"
+                app:srcCompat="@drawable/simpleat_logo" />
+
+            <TextView
+                android:id="@+id/SignUpLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sign Up"
+                android:textSize="20sp"
+
+                android:translationY="80dp" />
+
+            <EditText
+                android:id="@+id/chosenUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="17"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:translationY="130dp" />
+
+            <EditText
+                android:id="@+id/chosenEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="17"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:translationY="185dp" />
+
+            <EditText
+                android:id="@+id/mobilePhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="17"
+                android:hint="Type mobile number in +1AAAAAAAAAA"
+                android:inputType="textPersonName"
+                android:translationY="240dp" />
+
+            <EditText
+                android:id="@+id/selectedPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="17"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:translationY="295dp" />
+
+            <EditText
+                android:id="@+id/repeatPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="17"
+                android:hint="Type password again"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:translationY="350dp" />
+
+            <Button
+                android:id="@+id/completeSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Complete Sign Up"
+                android:translationY="420dp" />
+
+            <EditText
+                android:id="@+id/confirmationCode"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:ems="17"
+                android:hint="Enter the confirmation code"
+                android:inputType="textPersonName"
+                android:translationY="485dp" />
+
+            <Button
+                android:id="@+id/completeVerification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Verify"
+                android:translationY="550dp" />
+        </LinearLayout>
+    </ScrollView>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

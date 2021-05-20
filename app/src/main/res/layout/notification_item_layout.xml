@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationCard"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    card_view:cardBackgroundColor="@color/white"
+    android:foreground="@drawable/placard"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/notificationItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:translationX="10dp"
+            android:translationY="15dp" />
+
+        <ImageButton
+            android:id="@+id/notificationDelete"
+            android:layout_width="30dp"
+            android:layout_height="22dp"
+            android:background="@drawable/ic_baseline_delete_24"
+            android:translationX="360dp"
+            android:translationY="15dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:translationX="10dp"
+            android:translationY="45dp" />
+
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:translationX="320dp"
+            android:translationY="45dp" />
+
+        <ImageView
+            android:id="@+id/notificationBorder"
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:translationX="0dp"
+            android:translationY="40dp"
+            card_view:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/goToRecipePage"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:foreground="@drawable/placard"
+            android:text="Recipe"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:translationX="220dp"
+            android:translationY="4dp"/>
+
+</androidx.cardview.widget.CardView>

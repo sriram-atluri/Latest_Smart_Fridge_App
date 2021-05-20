@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include layout="@layout/top_toolbar_layout_reusable"/>
+
+    <Button
+        android:id="@+id/account_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="Account Settings        >"
+        android:backgroundTint="#9CC0E7"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#736F6F"
+        android:textStyle="bold"
+        android:text="Logout"
+        android:translationY="600dp" />
+
+
+    <TextView
+        android:id="@+id/PersonNameAndAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:translationX="262dp"
+        android:translationY="150dp" />
+
+    <TextView
+        android:id="@+id/GenderDisplay"
+        android:text="Text"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="275dp"
+        android:translationY="200dp" />
+
+    <TextView
+        android:id="@+id/AddressDispaly"
+        android:text="Text"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="260dp"
+        android:translationY="250dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profileicon"
+        android:translationX="80dp"
+        android:translationY="140dp"/>
+
+    <!--<ImageView
+        android:id="@+id/imageView5"
+        app:srcCompat="@drawable/image_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="80dp"
+        android:translationY="140dp" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapplication.firstFragments.HomeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_home_icon">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.myapplication.secondFragments.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First2Fragment"
+        android:name="com.example.myapplication.firstFragments.NotificationsFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_notifications">
+
+        <action
+            android:id="@+id/action_First2Fragment_to_Second2Fragment"
+            app:destination="@id/Second2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second2Fragment"
+        android:name="com.example.myapplication.secondFragments.Second2Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second2">
+
+        <action
+            android:id="@+id/action_Second2Fragment_to_First2Fragment"
+            app:destination="@id/First2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First3Fragment"
+        android:name="com.example.myapplication.recipeClassesAndFragments.RecipeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_recipe">
+
+        <action
+            android:id="@+id/action_First3Fragment_to_Second3Fragment"
+            app:destination="@id/Second3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second3Fragment"
+        android:name="com.example.myapplication.secondFragments.Second3Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second3">
+
+        <action
+            android:id="@+id/action_Second3Fragment_to_First3Fragment"
+            app:destination="@id/First3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First4Fragment"
+        android:name="com.example.myapplication.cameraClassesAndFragments.Camera2Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_camera2">
+
+        <action
+            android:id="@+id/action_First4Fragment_to_Second4Fragment"
+            app:destination="@id/Second4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second4Fragment"
+        android:name="com.example.myapplication.secondFragments.Second4Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second4">
+
+        <action
+            android:id="@+id/action_Second4Fragment_to_First4Fragment"
+            app:destination="@id/First4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First5Fragment"
+        android:name="com.example.myapplication.cameraClassesAndFragments.Camera3Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_camera3">
+
+        <action
+            android:id="@+id/action_First5Fragment_to_Second5Fragment"
+            app:destination="@id/Second5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second5Fragment"
+        android:name="com.example.myapplication.secondFragments.Second5Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second5">
+
+        <action
+            android:id="@+id/action_Second5Fragment_to_First5Fragment"
+            app:destination="@id/First5Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First6Fragment"
+        android:name="com.example.myapplication.cameraClassesAndFragments.Camera4Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_camera4">
+
+        <action
+            android:id="@+id/action_First6Fragment_to_Second6Fragment"
+            app:destination="@id/Second6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second6Fragment"
+        android:name="com.example.myapplication.secondFragments.Second6Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second6">
+
+        <action
+            android:id="@+id/action_Second6Fragment_to_First6Fragment"
+            app:destination="@id/First6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First7Fragment"
+        android:name="com.example.myapplication.firstFragments.First7Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first7">
+
+        <action
+            android:id="@+id/action_First7Fragment_to_Second7Fragment"
+            app:destination="@id/Second7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second7Fragment"
+        android:name="com.example.myapplication.secondFragments.Second7Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second7">
+
+        <action
+            android:id="@+id/action_Second7Fragment_to_First7Fragment"
+            app:destination="@id/First7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First7Fragment"
+        android:name="com.example.myapplication.firstFragments.First7Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first7">
+
+        <action
+            android:id="@+id/action_First7Fragment_to_Second7Fragment"
+            app:destination="@id/Second7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second7Fragment"
+        android:name="com.example.myapplication.secondFragments.Second7Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second7">
+
+        <action
+            android:id="@+id/action_Second7Fragment_to_First7Fragment"
+            app:destination="@id/First7Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First8Fragment"
+        android:name="com.example.myapplication.inventoryFragmentNestedFragmentsAndRelatedClasses.InventoryScreenFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_inventoryscreen">
+
+        <action
+            android:id="@+id/action_First8Fragment_to_Second8Fragment"
+            app:destination="@id/Second8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second8Fragment"
+        android:name="com.example.myapplication.secondFragments.Second8Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second8">
+
+        <action
+            android:id="@+id/action_Second8Fragment_to_First8Fragment"
+            app:destination="@id/First8Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First9Fragment"
+        android:name="com.example.myapplication.firstFragments.First9Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first9">
+
+        <action
+            android:id="@+id/action_First9Fragment_to_Second9Fragment"
+            app:destination="@id/Second9Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second9Fragment"
+        android:name="com.example.myapplication.secondFragments.Second9Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second9">
+
+        <action
+            android:id="@+id/action_Second9Fragment_to_First9Fragment"
+            app:destination="@id/First9Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First10Fragment"
+        android:name="com.example.myapplication.cameraClassesAndFragments.Camera1Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/camera1Fragment">
+
+        <action
+            android:id="@+id/action_First10Fragment_to_Second10Fragment"
+            app:destination="@id/Second10Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second10Fragment"
+        android:name="com.example.myapplication.secondFragments.Second10Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second10">
+
+        <action
+            android:id="@+id/action_Second10Fragment_to_First10Fragment"
+            app:destination="@id/First10Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First11Fragment"
+        android:name="com.example.myapplication.firstFragments.First11Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first11">
+
+        <action
+            android:id="@+id/action_First11Fragment_to_Second11Fragment"
+            app:destination="@id/Second11Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second11Fragment"
+        android:name="com.example.myapplication.secondFragments.Second11Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second11">
+
+        <action
+            android:id="@+id/action_Second11Fragment_to_First11Fragment"
+            app:destination="@id/First11Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First12Fragment"
+        android:name="com.example.myapplication.First12Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_notifications_revised">
+
+        <action
+            android:id="@+id/action_First12Fragment_to_Second12Fragment"
+            app:destination="@id/Second12Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second12Fragment"
+        android:name="com.example.myapplication.Second12Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second12">
+
+        <action
+            android:id="@+id/action_Second12Fragment_to_First12Fragment"
+            app:destination="@id/First12Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First13Fragment"
+        android:name="com.example.myapplication.firstFragments.First13Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_pantry">
+
+        <action
+            android:id="@+id/action_First13Fragment_to_Second13Fragment"
+            app:destination="@id/Second13Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second13Fragment"
+        android:name="com.example.myapplication.secondFragments.Second13Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second13">
+
+        <action
+            android:id="@+id/action_Second13Fragment_to_First13Fragment"
+            app:destination="@id/First13Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First14Fragment"
+        android:name="com.example.myapplication.firstFragments.First14Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_freezer">
+
+        <action
+            android:id="@+id/action_First14Fragment_to_Second14Fragment"
+            app:destination="@id/Second14Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second14Fragment"
+        android:name="com.example.myapplication.secondFragments.Second14Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second14">
+
+        <action
+            android:id="@+id/action_Second14Fragment_to_First14Fragment"
+            app:destination="@id/First14Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First15Fragment"
+        android:name="com.example.myapplication.firstFragments.NotificationDBHelper"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_fridge">
+
+        <action
+            android:id="@+id/action_First15Fragment_to_Second15Fragment"
+            app:destination="@id/Second15Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second15Fragment"
+        android:name="com.example.myapplication.secondFragments.Second15Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second15">
+
+        <action
+            android:id="@+id/action_Second15Fragment_to_First15Fragment"
+            app:destination="@id/First15Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First16Fragment"
+        android:name="com.example.myapplication.firstFragments.DBHelper"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_ingredients">
+
+        <action
+            android:id="@+id/action_First16Fragment_to_Second16Fragment"
+            app:destination="@id/Second16Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second16Fragment"
+        android:name="com.example.myapplication.secondFragments.Second16Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second16">
+
+        <action
+            android:id="@+id/action_Second16Fragment_to_First16Fragment"
+            app:destination="@id/First16Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First16Fragment"
+        android:name="com.example.myapplication.firstFragments.DBHelper"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_ingredients">
+
+        <action
+            android:id="@+id/action_First16Fragment_to_Second16Fragment"
+            app:destination="@id/Second16Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second16Fragment"
+        android:name="com.example.myapplication.secondFragments.Second16Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second16">
+
+        <action
+            android:id="@+id/action_Second16Fragment_to_First16Fragment"
+            app:destination="@id/First16Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First17Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.First17Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_recipes">
+
+        <action
+            android:id="@+id/action_First17Fragment_to_Second17Fragment"
+            app:destination="@id/Second17Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second17Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.Second17Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second17">
+
+        <action
+            android:id="@+id/action_Second17Fragment_to_First17Fragment"
+            app:destination="@id/First17Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First18Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.First18Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first18">
+
+        <action
+            android:id="@+id/action_First18Fragment_to_Second18Fragment"
+            app:destination="@id/Second18Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second18Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.Second18Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second18">
+
+        <action
+            android:id="@+id/action_Second18Fragment_to_First18Fragment"
+            app:destination="@id/First18Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First19Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.First19Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first19">
+
+        <action
+            android:id="@+id/action_First19Fragment_to_Second19Fragment"
+            app:destination="@id/Second19Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second19Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.Second19Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second19">
+
+        <action
+            android:id="@+id/action_Second19Fragment_to_First19Fragment"
+            app:destination="@id/First19Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First20Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.First20Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first20">
+
+        <action
+            android:id="@+id/action_First20Fragment_to_Second20Fragment"
+            app:destination="@id/Second20Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second20Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.Second20Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second20">
+
+        <action
+            android:id="@+id/action_Second20Fragment_to_First20Fragment"
+            app:destination="@id/First20Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First21Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.First21Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first21">
+
+        <action
+            android:id="@+id/action_First21Fragment_to_Second21Fragment"
+            app:destination="@id/Second21Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second21Fragment"
+        android:name="com.example.myapplication.foodtimeperiods.Second21Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second21">
+
+        <action
+            android:id="@+id/action_Second21Fragment_to_First21Fragment"
+            app:destination="@id/First21Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First22Fragment"
+        android:name="com.example.myapplication.First22Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first22">
+
+        <action
+            android:id="@+id/action_First22Fragment_to_Second22Fragment"
+            app:destination="@id/Second22Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second22Fragment"
+        android:name="com.example.myapplication.Second22Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second22">
+
+        <action
+            android:id="@+id/action_Second22Fragment_to_First22Fragment"
+            app:destination="@id/First22Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapplication.activityClasses.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_Second23Fragment"
+            app:destination="@id/Second23Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second23Fragment"
+        android:name="com.example.myapplication.activityClasses.Second23Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second23">
+
+        <action
+            android:id="@+id/action_Second23Fragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First3Fragment"
+        android:name="com.example.myapplication.ui.login.First3Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first3">
+
+        <action
+            android:id="@+id/action_First3Fragment_to_Second24Fragment"
+            app:destination="@id/Second24Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second24Fragment"
+        android:name="com.example.myapplication.ui.login.Second24Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second24">
+
+        <action
+            android:id="@+id/action_Second24Fragment_to_First3Fragment"
+            app:destination="@id/First3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/First4Fragment"
+        android:name="com.example.myapplication.ui.login.First4Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first4">
+
+        <action
+            android:id="@+id/action_First4Fragment_to_Second25Fragment"
+            app:destination="@id/Second25Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second25Fragment"
+        android:name="com.example.myapplication.ui.login.Second25Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second25">
+
+        <action
+            android:id="@+id/action_Second25Fragment_to_First4Fragment"
+            app:destination="@id/First4Fragment" />
+    </fragment>
+</navigation>

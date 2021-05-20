@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="@drawable/placard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardBackgroundColor="@color/white"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        >
+
+        <TextView
+            android:id="@+id/inventoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:translationX="35dp"
+            android:translationY="2dp" />
+
+        <CheckBox
+            android:id="@+id/transferToShoppingCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to        when running low"
+
+            android:textSize="12dp"
+            android:translationY="28dp" />
+
+        <TextView
+            android:id="@+id/expiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:translationX="300dp"
+            android:translationY="18dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="70dp"
+            android:translationY="42dp"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+
+    </androidx.cardview.widget.CardView >
+
+</LinearLayout>

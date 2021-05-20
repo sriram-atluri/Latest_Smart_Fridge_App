@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileSettingsClassesAndFragments.PostLogin">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay"
+        android:translationY="675dp"/>
+
+    <include layout="@layout/content_post_login" />
+    <include layout="@layout/reusable_layout_toolbar"/>
+    <include layout="@layout/top_toolbar_layout_reusable"/>
+
+    <ImageView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="946dp"
+        android:translationY="-8dp"
+        android:background="@drawable/google_pixel_5__1"
+        android:text="" />
+
+
+    <EditText
+        android:id="@+id/PersonName"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:translationX="160dp"
+        android:translationY="185dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:saveEnabled="true"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/PersonAge"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        android:translationX="160dp"
+        android:translationY="215dp" />
+
+    <EditText
+        android:id="@+id/PersonPhoneNumber"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone Number"
+        android:translationX="200dp"
+        android:translationY="245dp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:translationX="200dp"
+        android:translationY="275dp" />
+
+    <EditText
+        android:id="@+id/physicalAddressInput"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:lines="2"
+        android:singleLine="false"
+        android:hint="Type your address"
+        android:translationX="55dp"
+        android:translationY="370dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="260dp"
+        android:translationY="405dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/personal_information"
+        android:translationX="55dp"
+        android:translationY="405dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/current_medical_condition"
+        android:translationX="55dp"
+        android:translationY="450dp" />
+
+    <TextView
+        android:id="@+id/physicalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/physical_address"
+        android:translationX="55dp"
+        android:translationY="340dp" />
+
+    <EditText
+        android:id="@+id/medicalCondition"
+        android:layout_width="178dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Type medical condition"
+        android:translationX="210dp"
+        android:translationY="465dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveButton"
+        android:translationX="280dp"
+        android:translationY="610dp" />
+
+
+    <include layout="@layout/reusable_layout_toolbar"/>
+
+    <ImageButton
+        android:id="@+id/backButtonSpecial"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:translationX="30dp"
+        android:translationY="30dp" />
+
+    <ImageView
+        android:id="@+id/simplEatLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="180dp"
+        android:translationY="20dp"
+        app:srcCompat="@drawable/simpleat_logo" />
+
+    <ImageView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="55dp"
+        android:translationY="310dp"
+        app:srcCompat="@drawable/gender" />
+
+
+    <RadioGroup
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:translationX="150dp"
+        android:translationY="300dp"
+        >
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

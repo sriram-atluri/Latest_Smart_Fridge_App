@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recipeClassesAndFragments.RecipeTimeOfTheDay">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MyApplication.AppBarOverlay"/>
+
+    <include layout="@layout/content_recipe_time_of_the_day" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="180dp"
+        android:translationY="20dp"
+        app:srcCompat="@drawable/simpleat_logo" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/breakfast"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:paddingBottom="5dp"
+        android:translationY="130dp"
+        app:cardCornerRadius="2dp">
+
+        <TextView
+            android:id="@+id/Breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="3"
+            android:scaleY="2"
+            android:text="Breakfast"
+            android:translationX="250dp"
+            android:translationY="45dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lunch"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:translationY="220dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="3"
+            android:scaleY="2"
+            android:text="Lunch"
+            android:translationX="250dp"
+            android:translationY="45dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dinner"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:translationY="310dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="3"
+            android:scaleY="2"
+            android:text="Dinner"
+            android:translationX="250dp"
+            android:translationY="45dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/snacks"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:translationY="400dp">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="3"
+            android:scaleY="2"
+            android:text="Snacks"
+            android:translationX="250dp"
+            android:translationY="45dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/drinks"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:translationY="490dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="3"
+            android:scaleY="2"
+            android:text="Drinks"
+            android:translationX="250dp"
+            android:translationY="45dp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

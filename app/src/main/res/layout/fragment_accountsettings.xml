@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/top_toolbar_layout_reusable"/>
+
+
+    <EditText
+        android:id="@+id/PersonName"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:saveEnabled="true"
+        android:translationX="160dp"
+        android:translationY="160dp" />
+
+    <EditText
+        android:id="@+id/PersonAge"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:translationX="160dp"
+        android:translationY="205dp" />
+
+    <EditText
+        android:id="@+id/PersonPhoneNumber"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:translationX="160dp"
+        android:translationY="250dp" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:translationX="170dp"
+        android:translationY="295dp" />
+
+    <EditText
+        android:id="@+id/physicalAddressInput"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Type your address"
+        android:inputType="textPersonName"
+        android:lines="2"
+        android:singleLine="false"
+        android:imeOptions="actionDone"
+        android:translationX="30dp"
+        android:translationY="420dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="260dp"
+        android:translationY="470dp" />
+
+    <TextView
+        android:id="@+id/personalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:translationX="30dp"
+        android:translationY="470dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/current_medical_condition"
+        android:translationX="30dp"
+        android:translationY="510dp" />
+
+    <EditText
+        android:id="@+id/medicalCondition"
+        android:layout_width="178dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Type medical condition"
+        android:inputType="textPersonName"
+        android:translationX="210dp"
+        android:translationY="520dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:text="@string/saveButton"
+        android:backgroundTint="#9CC0E7"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:translationX="280dp"
+        android:translationY="610dp" />
+
+    <TextView
+        android:id="@+id/basicInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Information"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:translationX="30dp"
+        android:translationY="110dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="30dp"
+        android:translationY="170dp" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="30dp"
+        android:translationY="215dp" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="30dp"
+        android:translationY="260dp" />
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="30dp"
+        android:translationY="305dp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="30dp"
+        android:translationY="350dp" />
+
+    <TextView
+        android:id="@+id/physicalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physical Address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationX="30dp"
+        android:translationY="395dp" />
+
+
+    <RadioGroup
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:translationX="150dp"
+        android:translationY="340dp">
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

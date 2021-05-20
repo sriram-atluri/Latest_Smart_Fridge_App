@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+    <!-- Network access permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Enables camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:replace="android:theme">
+        <activity
+            android:name=".ui.login.ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+        <activity
+            android:name=".ui.login.SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activityClasses.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+        <activity android:name=".BarcodeScanningClasses.QRAndBarcodeScanActivity" />
+        <activity
+            android:name=".BarcodeScanningClasses.CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".foodtimeperiods.Drinks"
+            android:label="@string/title_activity_drinks"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".foodtimeperiods.Snacks"
+            android:label="@string/title_activity_snacks"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".foodtimeperiods.Dinner"
+            android:label="@string/title_activity_dinner"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".foodtimeperiods.Lunch"
+            android:label="@string/title_activity_lunch"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".foodtimeperiods.Breakfast"
+            android:label="@string/title_activity_breakfast"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".recipeClassesAndFragments.RecipeTimeOfTheDay"
+            android:label="@string/title_activity_recipe_time_of_the_day"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".activityClasses.HelpPage"
+            android:label="@string/title_activity_help_page"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".activityClasses.ContactsPage"
+            android:label="@string/title_activity_contacts_page"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".activityClasses.AboutPage"
+            android:label="@string/title_activity_about_page"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.MyApplication.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".cameraClassesAndFragments.camera_screen4"
+            android:label="@string/title_activity_camera_screen4"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".cameraClassesAndFragments.camera_screen3"
+            android:label="@string/title_activity_camera_screen3"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".cameraClassesAndFragments.CameraScreen2"
+            android:label="@string/title_activity_camera_screen2"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".InventoryScreen"
+            android:label="@string/title_activity_inventory_screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".recipeClassesAndFragments.RecipeScreen"
+            android:label="@string/title_activity_recipe_screen1"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".activityClasses.CartActivity"
+            android:label="@string/title_activity_cart"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <!--
+<activity
+            android:name=".ShoppingCartActivity"
+            android:label="@string/title_activity_shopping_cart" />
+        -->
+        <activity
+            android:name=".profileSettingsClassesAndFragments.ProfileSettingsActivity"
+            android:label="@string/title_activity_profile_screen"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
+            android:name=".profileSettingsClassesAndFragments.PostLogin"
+            android:label="@string/title_activity_post_login"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <!--
+<activity
+            android:name=".LambdaFunctionActivity"
+            android:label="@string/title_activity_lambda_function"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        -->
+        <activity android:name=".AuthenticationActivity">
+
+            <!--
+            <intent-filter>
+
+            </intent-filter>
+            -->
+        </activity>
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

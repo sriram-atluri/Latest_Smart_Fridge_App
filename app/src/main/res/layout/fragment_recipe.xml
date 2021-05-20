@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".recipeClassesAndFragments.RecipeFragment">
+
+    <!-- Provides the layout to switch between the two tabs -->
+    <com.google.android.material.tabs.TabLayout
+        app:tabTextAppearance="@style/CustomizedTab"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="#9CC0E7"
+        app:tabIndicatorColor="#9CC0E7"
+        android:id="@+id/recipeTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="150dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ingredients_recipeFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/recipes_recipeFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipes" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="30dp"
+        android:translationY="85dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Recipe" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/recipeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:translationY="200dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inventoryFragmentNestedFragmentsAndRelatedClasses.InventoryScreenFragment">
+
+    <!--<TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_first_fragment"
+        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_first" />-->
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabTextAppearance="@style/CustomizedTab"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="#9CC0E7"
+        app:tabIndicatorColor="#9CC0E7"
+        android:id="@+id/smartFridgeComponents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="150dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/pantry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pantry" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/fridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fridge" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/freezer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Freezer" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:translationY="200dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="30dp"
+        android:translationY="85dp"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Inventory" />
+
+    <ImageButton
+        android:id="@+id/inventoryAddButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:translationX="325dp"
+        android:translationY="82dp"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

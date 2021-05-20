@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="180dp"
+        android:translationY="20dp"
+        app:srcCompat="@drawable/simpleat_logo"
+        tools:layout_conversion_absoluteHeight="40dp"
+        tools:layout_conversion_absoluteWidth="212dp"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:translationX="260dp"
+        android:translationY="610dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button1"
+        android:translationX="160dp"
+        android:translationY="550dp"
+         />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="405dp"
+        android:layout_height="123dp"
+        android:translationX="5dp"
+        android:translationY="95dp"
+        app:srcCompat="@drawable/rectangle_1" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="100dp"
+        app:srcCompat="@drawable/temperature" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="223dp"
+        android:layout_height="53dp"
+        android:translationX="60dp"
+        android:translationY="140dp"
+        app:srcCompat="@drawable/freezer_temperature__fridge_temperature__" />
+
+    <ImageButton
+        android:id="@+id/recipeButton"
+        android:layout_width="138dp"
+        android:layout_height="140dp"
+        android:background="#0000"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationX="60dp"
+        android:translationY="300dp"
+        app:srcCompat="@drawable/image_1" />
+
+    <ImageButton
+        android:id="@+id/cameraScreenDefault"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:translationX="200dp"
+        android:translationY="300dp"
+        android:background="#0000"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:srcCompat="@drawable/image_3" />
+
+    <ImageButton
+        android:id="@+id/inventoryScreen"
+        android:layout_width="130dp"
+        android:layout_height="128dp"
+        android:translationX="65dp"
+        android:translationY="450dp"
+        android:background="#0000"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:srcCompat="@drawable/custom_inventory_icon" />
+
+    <ImageButton
+        android:id="@+id/shoppingCart"
+        android:layout_width="130dp"
+        android:layout_height="134dp"
+        android:translationX="200dp"
+        android:translationY="450dp"
+        android:background="#0000"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:srcCompat="@drawable/shopping_cart_icon" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

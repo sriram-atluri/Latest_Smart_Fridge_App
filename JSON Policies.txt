@@ -1,0 +1,102 @@
+Custom-created policy
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:AttachPrincipalPolicy"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Connect",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Publish",
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/get"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Subscribe",
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/delta",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/documents",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/update/rejected",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/get/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/$aws/things/${iot:ClientId}/shadow/get/rejected"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Receive",
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/delta",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/get/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/get/rejected",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/rejected",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/accepted",
+        "arn:aws:iot:us-west-2:656922978498:topic/$aws/things/${iot:ClientId}/shadow/update/accepted"
+      ]
+    }
+  ]
+}
+
+
+Default policy
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:Publish",
+        "iot:Receive"
+      ],
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topic/sdk/test/java",
+        "arn:aws:iot:us-west-2:656922978498:topic/sdk/test/Python",
+        "arn:aws:iot:us-west-2:656922978498:topic/topic_1",
+        "arn:aws:iot:us-west-2:656922978498:topic/topic_2"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:Subscribe"
+      ],
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/sdk/test/java",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/sdk/test/Python",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/topic_1",
+        "arn:aws:iot:us-west-2:656922978498:topicfilter/topic_2"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iot:Connect"
+      ],
+      "Resource": [
+        "arn:aws:iot:us-west-2:656922978498:client/sdk-java",
+        "arn:aws:iot:us-west-2:656922978498:client/basicPubSub",
+        "arn:aws:iot:us-west-2:656922978498:client/sdk-nodejs-*"
+      ]
+    }
+  ]
+}
+
+certPath is the certificate, keyPath is the private key, rootCA is root certification
+
+The certification path and key path is probably what is missing.
