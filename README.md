@@ -1,4 +1,4 @@
-# Latest_Smart_Fridge_App
+# Smart_Fridge_App_Simpleat
 
 This project is called SimplEat, an Android + AWS based smart refrigerator app prototype designed with the intention to make it easier for home
 users to receive information on the following essentials: fridge temperature, available fridge inventory, cookable recipes, food condition, and the adding of new ingredients.
